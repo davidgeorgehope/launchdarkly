@@ -19,6 +19,7 @@ Provided everything is working correctly you should see that the Edit Button wil
 Questions for LD discussion, 
 
 Do you ever find that people end up creating thousands of usernames by accident or because of hacking?
+
 What do you do about if/else sprawl is there a better way to wrap features that just with if statements?
 
 
