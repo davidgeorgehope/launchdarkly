@@ -22,6 +22,8 @@ Questions for LD discussion,
 
 -What do you do about if/else sprawl is there a better way to wrap features that just with if statements?
 
+-Do you find people try to put LD behind a service rather than coding direcly into the front end?
+
 NOTE: I understand using the singleton to store credentials would be very bad in principle. I would use a cookie/session/local storage and/or database for this data in a production scenario
 
 
