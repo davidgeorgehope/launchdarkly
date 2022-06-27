@@ -43,7 +43,7 @@
 
                   function render() {
                     const flagValue = ldclient.variation(flagKey, false);
-                    if(flagValue){
+                    if(!flagValue){
                           var edit = document.getElementById('edit');
 
                        edit.replaceChild(document.createTextNode(""), edit.firstChild);
