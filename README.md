@@ -1,6 +1,6 @@
 # launchdarkly
 
-Login to launchdarkly and set up the feature flags backend-note and edit-note. 
+Login to launchdarkly and set up the feature flags 'backend-note' and 'edit-note'. 
 
 To run this you need at least Java 18
 
