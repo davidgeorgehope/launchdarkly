@@ -15,3 +15,10 @@ Enter a username, client key and sdk key.
 Go to launch darkly and test turning on/off the flags for specific users. 
 
 Provided everything is working correctly you should see that the Edit Button will enable/disable depending on the 'edit-note' flag and that the text below the table will change depending on the 'backend-note' flag.
+
+Questions for LD discussion, 
+
+Do you ever find that people end up creating thousands of usernames by accident or because of hacking?
+What do you do about if/else sprawl is there a better way to wrap features that just with if statements?
+
+
