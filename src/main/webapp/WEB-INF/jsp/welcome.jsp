@@ -18,14 +18,16 @@
     {
 
         $.get({
-        url: "getLaunchDarklyCredentials",
-        contentType: "application/json",
-        dataType: "json",
+        url: "hello",
+        contentType: "text/plain",
         type: 'GET',
         success: function (response) {
-            response = response.data
+                          var edit = document.getElementById('back-end-flag');
+                       edit.replaceChild(document.createTextNode(response), edit.firstChild);
+              }})
+
             // Set clientSideID to your LaunchDarkly client-side ID
-                  const clientSideID = '62b5ff305e8881158cd7a2f6';
+                  const clientSideID = '${clientId}';
 
                   // Set flagKey to the feature flag key you want to evaluate
                   const flagKey = 'edit-note';
@@ -33,8 +35,8 @@
                   // Set up the user properties. This user should appear on your
                   // LaunchDarkly users dashboard soon after you run the demo.
                   const user = {
-                    'key': 'UNIQUE IDENTIFIER-2',
-                    'name': 'Bob-2'
+                    'key': '${userId}',
+                    'name': '${userId}'
                   };
 
                   const ldclient = LDClient.initialize(clientSideID, user);
@@ -51,7 +53,6 @@
                   ldclient.on('ready', render);
                   ldclient.on('change', render);
                   ldclient.close();
-        }})
 
 
     }
@@ -80,9 +81,11 @@
 					</tr>
 			</tbody>
 		</table>
-		<div>
-			<a class="btn btn-default" href="/add-todo">Add a Todo</a>
 
+		<div id='back-end-flag'>
+            <div>
+
+            </div>
 		</div>
 
 	</div>

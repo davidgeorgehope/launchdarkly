@@ -1,5 +1,6 @@
 package com.djhope.launchdarkly;
 
+
 public class CredentialsBean {
     public String getUserName() {
         return userName;
@@ -21,15 +22,15 @@ public class CredentialsBean {
 
     public String userId;
 
-    public String getClientKey() {
-        return clientKey;
+    public String getSDKKey() {
+        return sdkKey;
     }
 
-    public void setClientKey(String clientKey) {
-        this.clientKey = clientKey;
+    public void setSDKKey(String sdkKey) {
+        this.sdkKey = sdkKey;
     }
 
-    public String clientKey;
+    public String sdkKey;
 
 
 
