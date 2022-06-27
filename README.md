@@ -13,3 +13,5 @@ Go to http://localhost:8080/login
 Enter a username, client key and sdk key.
 
 Go to launch darkly and test turning on/off the flags for specific users. 
+
+Provided everything is working correctly you should see that the Edit Button will enable/disable depending on the 'edit-note' flag and that the text below the table will change depending on the 'backend-note' flag.
